@@ -8,6 +8,8 @@ Advised by Prof. Shokouh Pourarian, with McLean Milavickas.
 
 We solved the steady-state heat equation (Laplace's Equation) on a 10 x 5 rectangle with a hot top edge (120°) and compared several numerical approaches.
 
+![Temperature distribution with Neumann boundary conditions](images/laplace-neumann.png)
+
 📄 [Final presentation (PDF)](final-presentation.pdf)
 
 ## Approaches
