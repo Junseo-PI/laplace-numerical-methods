@@ -34,6 +34,17 @@ We solved the steady-state heat equation (Laplace's Equation) on a 10 x 5 rectan
 The best value, **ω = 1.3**, converges in 19 iterations — **2.4× fewer than Gauss–Seidel**.
 Pushing ω too high makes the solution overshoot, and convergence slows down again.
 
+### Effect of grid size
+
+On a finer grid (41 x 21 points instead of 10 x 5), the best ω shifts and the speedup grows:
+
+| Grid | Gauss–Seidel (ω = 1) | Best ω | Iterations at best ω | Speedup |
+|---|---|---|---|---|
+| 10 x 5 | 45 | 1.3 | 19 | 2.4× |
+| 41 x 21 | 866 | 1.8 | 97 | 8.9× |
+
+The best relaxation parameter depends on the problem, so it cannot simply be fixed in advance.
+
 ## How to run
 
 ```bash
